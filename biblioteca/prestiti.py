@@ -16,10 +16,14 @@ def presta_libro(biblioteca: dict, libro:dict) -> bool:
     return False
 
 def restituisci_libro(biblioteca: dict, libro: dict, prestiti: list) -> bool:
-    if presta_libro
+    if libro in prestiti:
         biblioteca['libri'] += 1
         return True
+    return False
 
 def libri_prestati(biblioteca: dict) -> list[dict]:
-    prestati = [dict]
-    for 
+    libri_in_prestito = [dict]
+    for libro in biblioteca['libri']:
+        if presta_libro == True:
+            libri_in_prestito.append(libro)
+    return libri_in_prestito

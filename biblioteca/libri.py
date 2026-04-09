@@ -15,8 +15,8 @@
 # - Stampa le informazioni di ogni libro.
 
 
-def crea_libro(titolo: str, autore: str, genere: str, copie_disponibili: int) -> dict:
-    return {"titolo":titolo, "autore":autore, "genere":genere, "copie_disponibili":copie_disponibili}
+def crea_libro(titolo: str, autore: str, genere: str, copie_disponibili: int, copie_iniziali: int) -> dict:
+    return {"titolo":titolo, "autore":autore, "genere":genere, "copie_disponibili":copie_disponibili, "copie_iniziali": copie_iniziali}
 
 def info_libro(libro: dict) -> str:
     return f"{libro['titolo']} di {libro['autore']} ({libro['genere']} - Copie disponibili: {libro['copie_disponibili']})"

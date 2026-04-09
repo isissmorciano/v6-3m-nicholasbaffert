@@ -20,4 +20,7 @@ u3 = prestiti.crea_utente("Carlo", "Verdi")
 # - Stampa i titoli dei libri disponibili.
 # - Cerca i libri di un autore e stampa i titoli trovati.
 
-stampa_informazioni
+for libro in libri.libri_disponibili([l1, l2, l3, l4]):
+    print(libri.info_libro(libro))
+
+fantascienza = libri.filtra_per_genere([l1, l2, l3, l4], "Fantascienza")
