@@ -1,0 +1,2 @@
+  git config --global user.email "nicholas.baffert@studenti.isissgobetti.it"
+  git config --global user.name "nicholasbaffert"

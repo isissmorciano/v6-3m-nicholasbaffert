@@ -41,4 +41,22 @@ def libro_disponibile(libro: dict) -> bool:
 # - Cerca i libri di un autore e stampa i titoli trovati.
 
 def filtra_per_genere(libri: list[dict], genere: str) -> list[dict]:
-    
+    genere_filtrati = []
+    for libro in libri:
+        if libro['genere'] == genere:
+            genere_filtrati.append(libro['genere'])
+    return genere_filtrati
+
+def libri_disponibili(libri: list[dict]) -> list[dict]:
+    libri_copie_disponibili = []
+    for libro in libri:
+        if libro['copie_disponibili'] >= 1:
+            libri_copie_disponibili.append(libro)
+    return libri_copie_disponibili
+
+def cerca_per_autore(libri: list[dict], autore: str) -> list[dict]:
+    libri_autore = []
+    for libro in libri:
+        if libro['autore'] == autore:
+            libri_autore.append(libro['autore'])
+    return libri_autore
